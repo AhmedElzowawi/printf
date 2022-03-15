@@ -26,6 +26,7 @@ int print_r(va_list args);
 int print_R(va_list args);
 int print_S(va_list args);
 int print_b(va_list args);
+int print_u(va_list args);
 
 int _printf(const char *format, ...);
 int (*get_op_func(const char *format, int n))(va_list args);

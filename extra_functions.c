@@ -62,3 +62,28 @@ int print_b(va_list args)
 	}
 	return (sum);
 }
+/**
+ * print_u - Struct op
+ *
+ * @args: The operator
+ *Return: nothhing
+ */
+int print_u(va_list args)
+{
+	unsigned sum = 0, i = 1;
+	unsigned int realNumber;
+
+	realNumber = va_arg(args, unsigned int);
+	while (realNumber / i > 9)
+	{
+		i *= 10;
+	}
+	while (i != 0)
+	{
+		_putchar('0' + realNumber / i);
+		realNumber %= i;
+		i /= 10;
+		sum++;
+	}
+	return (sum);
+}
