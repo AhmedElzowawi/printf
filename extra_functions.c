@@ -43,7 +43,7 @@ int print_b(va_list args)
 	realNumber = va_arg(args, unsigned int);
 	if (realNumber == 1 || realNumber == 0)
 	{
-		_putchar(arr[i]);
+		_putchar(realNumber + '0');
 		sum++;
 	}
 	else
