@@ -70,7 +70,7 @@ int print_b(va_list args)
  */
 int print_u(va_list args)
 {
-	unsigned sum = 0, i = 1;
+	unsigned int sum = 0, i = 1;
 	unsigned int realNumber;
 
 	realNumber = va_arg(args, unsigned int);
