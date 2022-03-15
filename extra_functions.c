@@ -20,7 +20,7 @@ int print_S(va_list args)
 			_putchar('\\');
 			_putchar('x');
 			sum += 2;
-			if (s[i] < 16)
+			if (str[i] < 16)
 			{
 				_putchar('0');
 				sum++;
