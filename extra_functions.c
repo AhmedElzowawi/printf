@@ -54,7 +54,7 @@ int print_b(va_list args)
 			realNumber /= 2;
 			i++;
 		}
-		for (i -= i; i >= 0; i--)
+		for (i -= 1; i >= 0; i--)
 			_putchar(arr[i] + '0');
 	}
 	return (sum);
