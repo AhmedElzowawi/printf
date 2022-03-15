@@ -36,10 +36,6 @@ The specifier character at the end is the most significant component, since it d
 |Specifier                |Output                        |Examples |
 |----------------|-------------------------------|-----------------------------|
 | d or i | Signed integer | 1024, -1024 |
-| u | Unsigned integer | 1024 |
-| o | Unsigned octal | 432 |
-| x | Unsigned hexadecimal integer | 3ca |
-| X | Unsigned hexadecimal integer (uppercase) | 3CA |
 | b | Binary Representation of unsigned integer | 01010110 |
 | s | String of characters | Hello World |
 | c | Character | y |
