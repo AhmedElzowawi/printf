@@ -38,6 +38,12 @@ Prints a string in reverse.
 .B R
 Prints a string converted to rot13.
 
+
+.TP
+.B S
+Non printable characters with an ASCII value less than 32 or equal or greater to 127 are printed this way: \x, followed by the ASCII code value in hexadecimal (upper case - always 2 characters).
+
+
 .TP
 .B %
 A '%' is written but no argument is converted. The complete version specification is '%%'.
