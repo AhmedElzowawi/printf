@@ -6,6 +6,7 @@
  * @n: parameter
  * Return: Always 0.
  */
+
 int (*get_op_func(const char *format, int n))(va_list args)
 {
 	op_t ops[] = {
