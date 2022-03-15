@@ -92,3 +92,33 @@ int print_r(va_list args)
 	}
 	return (sum);
 }
+/**
+ * print_R - Struct op
+ *
+ * @args: The operator
+ *Return: nothhing
+ */
+int print_R(va_list args)
+{
+	int i;
+	int j;
+	int sum = 0;
+	char *s = va_args(args, char *);
+	char l[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char n[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0; l[j] != '\0'; j++)
+		{
+			if (s[i] == l[j])
+			{
+				s[i] = n[j];
+				_putchar(s[i]);
+				sum++;
+				break;
+			}
+		}
+	}
+	return (sum);
+}

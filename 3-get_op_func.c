@@ -14,6 +14,7 @@ int (*get_op_func(const char *format, int n))(va_list args)
 		{"d", print_d},
 		{"i", print_d},
 		{"r", print_r},
+		{"R", print_R},
 		{NULL, NULL}
 	};
 	int i;
