@@ -13,6 +13,8 @@ int (*get_op_func(const char *format, int n))(va_list args)
 		{"s", print_s},
 		{"d", print_d},
 		{"i", print_d},
+		{"S", print_S},
+		{"b", print_b},
 		{"r", print_r},
 		{"R", print_R},
 		{NULL, NULL}
