@@ -103,7 +103,7 @@ int print_R(va_list args)
 	int i;
 	int j;
 	int sum = 0;
-	char *s = va_args(args, char *);
+	char *s = va_arg(args, char *);
 	char l[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char n[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
@@ -113,11 +113,15 @@ int print_R(va_list args)
 		{
 			if (s[i] == l[j])
 			{
-				s[i] = n[j];
-				_putchar(s[i]);
+				_putchar(n[j]);
 				sum++;
 				break;
 			}
+		}
+		if (!l[j])
+		{
+			_putchar(s[i]);
+			sum++;
 		}
 	}
 	return (sum);
