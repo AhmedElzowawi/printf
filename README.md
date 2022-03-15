@@ -9,7 +9,7 @@ The function is variadic and thus takes any amount of arguments following the fo
 - Use variadic functions to allow a custom number of arguments
 - Parse a format string to identify custom print options
 
-## Use & Examples 
+## Use & Examples
 **Use - General:**_printf("format string", var1, var2, ...);
 
 *Examples:*
@@ -30,7 +30,7 @@ _printf() returns negative one (-1) upon failure, and the number of bytes (as an
 - Example: _printf("%+.22ld\n", LONG_MAX)
 	- Output: +0009223372036854775807
 
-### Specifiers 
+### Specifiers
 The specifier character at the end is the most significant component, since it defines the type and the interpretation of its corresponding argument:
 
 |Specifier                |Output                        |Examples |
@@ -41,6 +41,7 @@ The specifier character at the end is the most significant component, since it d
 | c | Character | y |
 | r | Reversed string of characters | dlroW olleH |
 | R | ROT13 Translation of string | Uryyb |
+| S | Converts non printable characters to \x and it's hexadecimal | \x0A |
 ## Authors
 
 https://github.com/jaafarfares
