@@ -56,6 +56,7 @@ int print_b(va_list args)
 		}
 		for (i -= 1; i >= 0; i--)
 			_putchar(arr[i] + '0');
+			sum++;
 	}
 	return (sum);
 }
