@@ -118,7 +118,7 @@ int print_R(va_list args)
 				break;
 			}
 		}
-		if (!l[j])
+		if (l[j] == '\0')
 		{
 			_putchar(s[i]);
 			sum++;
